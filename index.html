@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Cyberpunk Scene</title>
+  <link rel="stylesheet" href="src/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <div class="main w-full h-full relative font-sans">
+    <!-- Navigation Bar -->
+    <nav class="w-full fixed top-0 left-0 px-10 py-3 z-10 flex justify-between items-center">
+      <img class="w-[180px] mix-blend-screen contrast-125 saturate-150 filter"
+        src="https://preview.redd.it/3d-rendered-the-cyberpunk-logo-using-blender-v0-khopj82wqee91.png?width=1080&crop=smart&auto=webp&s=0e62e74ba8b5ef6191228e855079491cfa56f57b"
+        alt="Logo">
+      <div class="flex gap-5 items-center">
+        <a href="#games"
+          class="tracking-tight text-white hover:text-cyan-400 hover:drop-shadow-[0_0_10px_rgba(34,211,238,0.7)] transition-all">Games</a>
+        <a href="#store"
+          class="tracking-tight text-white hover:text-cyan-400 hover:drop-shadow-[0_0_10px_rgba(34,211,238,0.7)] transition-all">Store</a>
+        <a href="#community"
+          class="tracking-tight text-white hover:text-cyan-400 hover:drop-shadow-[0_0_10px_rgba(34,211,238,0.7)] transition-all">Community</a>
+        <a href="#news"
+          class="tracking-tight text-white hover:text-cyan-400 hover:drop-shadow-[0_0_10px_rgba(34,211,238,0.7)] transition-all">News</a>
+        <a href="#support"
+          class="tracking-tight text-white hover:text-cyan-400 hover:drop-shadow-[0_0_10px_rgba(34,211,238,0.7)] transition-all">Support</a>
+        <button class="tracking-tight bg-cyan-500 text-black px-4 py-2 rounded hover:bg-cyan-400 transition-colors">Sign
+          In</button>
+      </div>
+    </nav>
+
+    <!-- Canvas and Effects -->
+    <div class="absolute w-full h-full overflow-hidden top-0 left-0">
+
+      <!-- Light glow and logo -->
+      <img
+        class="absolute z-0 w-3/4 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mix-blend-lighten contrast-150 saturate-150 pointer-events-none"
+        src="https://preview.redd.it/3d-rendered-the-cyberpunk-logo-using-blender-v0-khopj82wqee91.png?width=1080&crop=smart&auto=webp&s=0e62e74ba8b5ef6191228e855079491cfa56f57b"
+        alt="Backdrop Logo">
+      <canvas id="canvas"></canvas>
+    </div>
+  </div>
+
+  <!-- Load JavaScript -->
+  <script type="module" src="src/main.js"></script>
+</body>
+
+</html>
